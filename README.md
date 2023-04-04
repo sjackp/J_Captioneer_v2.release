@@ -60,4 +60,4 @@ If you'd like to contribute to J_Captioneer, please [fork the repository](https:
 
 ## Credits
 ### By Seif Jackson and GPT4
-### Crop&Resize+compilation error fix: Daniel Knowlton
+### Crop&Resize+Endless recursion error fix: Daniel Knowlton (thanks dude!)
