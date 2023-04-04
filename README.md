@@ -38,7 +38,7 @@ J_Captioneer_v2 builds on J_Captioneer_v1, with the following features:
 
 ### Download and Extract
 
-1. Download the the ZIP file from the web page(https://sjackp.github.io/J_Captioneer_v2.release/) .
+1. Download the the ZIP file from the web page https://sjackp.github.io/J_Captioneer_v2.release/ .
 2. Extract the folder in the ZIP file to any folder of your choice.
 3. Run the .exe
 
@@ -52,7 +52,7 @@ J_Captioneer_v2 builds on J_Captioneer_v1, with the following features:
 
 To use J_Captioneer, follow these steps:
 
-1. Launch the application by running `J_Captioneer.exe` (standalone executable)
+1. Launch the application by running `J_Captioneer_v2.exe` (standalone executable)
 2. Click "Choose Directory" to select the folder containing the images you want to work with.
 3. Thumbnails of the images will be displayed. Click on a thumbnail to view the image and its associated caption (an empty .txt file will be created if unavailable).
 4. Click on the dropdown menu next to "Model:" to select the img-to-txt model (VIT-GPT2 or BLIP) and Click "Generate Captions For All" to generate captions.
@@ -68,7 +68,7 @@ If you'd like to contribute to J_Captioneer, please [fork the repository](https:
 
 ## Bug Reports
 
-Please submit any bugs you find here and I will do my best to address them. (https://github.com/sjackp/J_Captioneer_v2.release/issues)
+Please submit any bugs you find here and I will do my best to address them. https://github.com/sjackp/J_Captioneer_v2.release/issues
 
 ## Credits
 ### By Seif Jackson and GPT4
