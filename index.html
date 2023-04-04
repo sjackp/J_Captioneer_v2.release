@@ -61,25 +61,96 @@
     text-align: center;
     padding: 5rem;
     color: #000000;
-    }
-
+    }   
     #showcase h1 {
-    font-size: 4rem;
+  font-size: 4rem;
     }
 
     #showcase p {
     font-size: 1.5rem;
     }
 
-    #content {
+    #preview {
     padding: 1rem;
+    text-align: center;
     }
 
     footer {
-    background-color: #333;
-    color: #fff;
+    background-color: transparent;
+    color: #4a9a7d;
     text-align: center;
     padding: 1rem;
+    }
+
+
+
+  
+
+    .download-button {
+    display: inline-block;
+    margin: 1rem 0;
+    }
+
+    .download-button button {
+    background-color: #4a9a7d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    }
+
+    .download-button button:hover {
+    background-color: #3d816a;
+    }
+    .github-button {
+    display: inline-block;
+    margin: 1rem 0;
+    }
+
+    .github-button button {
+    background-color: #666666;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    }
+
+    .github-button button:hover {
+    background-color: #383838;
+    }
+    #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    }
+    .download-button, .github-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem;
+    }
+
+    #content h2 {
+    margin-bottom: 1rem;
+    }
+
+    #content p, #content ol {
+    margin-bottom: 1.5rem;
+    }
+
+    #content ol li {
+    margin-bottom: 0.5rem;
     }
 
     /* Responsive design for mobile devices */
@@ -96,23 +167,36 @@
         padding: 0.25rem;
     }
     }
+
+
 </style>
 </head>
 <body>
+    
     <section id="showcase">
         <h1>J_Captioneer_v2.release</h1>
         <p>A PyQt5-based image & caption editor, browser, and caption generator</p>
       </section>
-      <section id="content">
+      <section id="preview">
         <h2></h2>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TOtgdcpMKVU" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8phmHSUDzRg" frameborder="0" allowfullscreen></iframe>
         </div>
         <br>
         <div class="download-button">
-            <a href="YOUR_DIRECT_DOWNLOAD_LINK_HERE" download><button>Download J_Captioneer_v2</button></a>
-        </div>
+            <a href="https://drive.google.com/uc?export=download&id=13lI4DTsybnB2nMTeBpyBzZPy7hWLrdwz" download>
+              <button>Download J_Captioneer_v2</button>
+            </a>
+          </div>
+          
+          <div class="github-button">
+            <a href="https://github.com/sjackp/J_Captioneer_v2.release" download>
+              <button>Github Repository</button>
+            </a>
+          </div>
+          
     </section>
+    
   <footer>
     &copy; 2023 J_Captioneer. All rights reserved.
   </footer>
