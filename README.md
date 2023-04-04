@@ -59,6 +59,5 @@ If you'd like to contribute to J_Captioneer, please [fork the repository](https:
 
 
 ## Credits
-
-Seif Jackson+GPT-4
-Daniel Knowlton
+### By Seif Jackson and GPT4
+### Crop&Resize+compilation error fix: Daniel Knowlton
