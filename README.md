@@ -8,11 +8,11 @@ J_Captioneer_v1 is a PyQt5-based image editor and browser, as well as a caption 
 
 # What's New in v2?
 
-Introduced BLIP & VIT-GPT2 to generate captions.
-Added Crop & Resize (Like birme.net).
-Added Settings to Launch Dark Mode on Launch, Remember Last Directory or Choose Default Directory.
-Removed Find X and add after/before (Can be done with find replace all).
-Optimized the program, faster load times, and no more frozen windows!
+1. BLIP & VIT-GPT2: Generate captions using the state-of-the-art models BLIP and VIT-GPT2.
+2. Crop & Resize: Crop and resize images to your desired dimensions, similar to the functionality found on birme.net.
+3. Settings: Launch the app in dark mode, remember the last directory opened, or choose a default directory.
+4. Removed Find X and add after/before: This function can now be achieved with the find and replace function.
+5. Optimized the program: Faster load times and no more frozen windows!
 
 ## Features
 
@@ -20,7 +20,7 @@ J_Captioneer_v2 builds on the success of J_Captioneer_v1, with the following fea
 
 1. Load and display images in a directory.
 2. Navigate through images with left and right arrow buttons or keys.
-3. Add, edit, and save captions as separate text files associated with each image.
+3. Add, edit, generate, and save captions as separate text files associated with each image.
 4. Display images as thumbnails for easy navigation.
 5. Add prefix and suffix to all captions in a directory.
 6. Find and replace text in all captions in a directory.
@@ -35,7 +35,7 @@ Download the repository as a ZIP file from the releases page or clone it using t
 Extract the ZIP file to any folder of your choice.
 Run the .exe
 
-###From Source
+### From Source
 Clone the repository via git clone https://github.com/sjackp/J_Captioneer.v2.release.git
 Run the .exe
 
@@ -46,11 +46,19 @@ To use J_Captioneer, follow these steps:
 1. Launch the application by running `J_Captioneer.exe` (standalone executable)
 2. Click "Choose Directory" to select the folder containing the images you want to work with.
 3. Thumbnails of the images will be displayed. Click on a thumbnail to view the image and its associated caption (an empty .txt file will be created if unavailable).
-4. Use the left and right arrow buttons or keys to navigate between images.
-5. Edit the caption in the text box and click "Save" to save the changes(or Ctrl+s). Captions are saved in the text files with the same name as the image.
-6. To return to the thumbnail view, click the "Back" button or press the "Escape" key.
-7. Use the menu options under "File" to access additional features such as adding prefix/suffix, find and replace, and toggling dark mode.
+4. Click on the dropdown menu next to "Model:" to select the img-to-txt model (VIT-GPT2 or BLIP) and Click "Generate Captions For All" to generate captions.
+5. Click on "Generate Caption" button to generate a caption only for the image you are viewing.  
+6. Use the left and right arrow buttons or keys to navigate between images.
+7. Edit the caption in the text box and click "Save" to save the changes(or Ctrl+s). Captions are saved in the text files with the same name as the image.
+8. To return to the thumbnail view, click the "Back" button or press the "Escape" key.
+9. Use the menu options under "File" to access additional features such as adding prefix/suffix, find and replace, toggling dark mode, and settings.
 
 ## Contributing
 
 If you'd like to contribute to J_Captioneer, please [fork the repository](https://github.com/sjackp/J_Captioneer.v2.release/fork), create a new branch for your changes, and open a pull request.
+
+
+## Credits
+
+Seif Jackson+GPT-4
+Daniel Knowlton
