@@ -37,6 +37,7 @@ J_Captioneer_v2 builds on J_Captioneer_v1, with the following features:
 ## Installation
 
 ### Download and Extract
+
 1. Download the the ZIP file from the web page(https://sjackp.github.io/J_Captioneer_v2.release/) .
 2. Extract the folder in the ZIP file to any folder of your choice.
 3. Run the .exe
@@ -44,7 +45,7 @@ J_Captioneer_v2 builds on J_Captioneer_v1, with the following features:
 ### From Source
 
 1. Clone the repository via git clone https://github.com/sjackp/J_Captioneer_v2.release.git
-2.Run pip install -r requirements.txt
+2. Run pip install -r requirements.txt
 3. Run the python script
 
 ## Usage
