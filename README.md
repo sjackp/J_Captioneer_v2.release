@@ -22,7 +22,7 @@ J_Captioneer_v1 is a PyQt5-based image editor and browser, as well as a caption 
 
 ## Features
 
-J_Captioneer_v2 builds on the success of J_Captioneer_v1, with the following features:
+J_Captioneer_v2 builds on J_Captioneer_v1, with the following features:
 
 1. Load and display images in a directory.
 2. Navigate through images with left and right arrow buttons or keys.
@@ -37,13 +37,14 @@ J_Captioneer_v2 builds on the success of J_Captioneer_v1, with the following fea
 ## Installation
 
 ### Download and Extract
-Download the repository as a ZIP file from the releases page or clone it using the command git clone https://github.com/sjackp/J_Captioneer.v2.release.git.
-Extract the ZIP file to any folder of your choice.
+Download the the ZIP file from the web page(https://sjackp.github.io/J_Captioneer_v2.release/) .
+Extract the folder in the ZIP file to any folder of your choice.
 Run the .exe
 
 ### From Source
-Clone the repository via git clone https://github.com/sjackp/J_Captioneer.v2.release.git
-Run the .exe
+Clone the repository via git clone https://github.com/sjackp/J_Captioneer_v2.release.git
+Run pip install -r requirements.txt
+Run the python script
 
 ## Usage
 
@@ -63,6 +64,9 @@ To use J_Captioneer, follow these steps:
 
 If you'd like to contribute to J_Captioneer, please [fork the repository](https://github.com/sjackp/J_Captioneer.v2.release/fork), create a new branch for your changes, and open a pull request.
 
+## Bug Reports
+
+Please submit any bugs you find here and I will do my best to address them. (https://github.com/sjackp/J_Captioneer_v2.release/issues)
 
 ## Credits
 ### By Seif Jackson and GPT4
