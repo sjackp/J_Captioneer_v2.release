@@ -1,7 +1,10 @@
 # J_Captioneer_v2.release
 
-<div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/LnKn85C2gwY" frameborder="0" allowfullscreen></iframe>
+<div align="center">
+  <img src="https://tinypic.host/i/zdgub" width="250"/>
+  <img src="https://tinypic.host/i/zd7Ou" width="250"/> 
+  <img src="https://tinypic.host/i/zdSEx" width="200"/>
+  <img src="https://tinypic.host/i/zd949" width="200"/>
 </div>
 
 
