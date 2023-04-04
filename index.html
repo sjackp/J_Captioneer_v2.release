@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J_Captioneer</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem;
+      transition: background-color 0.2s;
+    }
+    nav a:hover {
+    background-color: #555;
+    }
+
+    #showcase {
+    min-height: 300px;
+    background-image: url('your-image-url.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 5rem;
+    color: #000000;
+    }
+
+    #showcase h1 {
+    font-size: 4rem;
+    }
+
+    #showcase p {
+    font-size: 1.5rem;
+    }
+
+    #content {
+    padding: 1rem;
+    }
+
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    }
+
+    /* Responsive design for mobile devices */
+    @media screen and (max-width: 768px) {
+    #showcase h1 {
+        font-size: 2rem;
+    }
+
+    #showcase p {
+        font-size: 1rem;
+    }
+
+    nav a {
+        padding: 0.25rem;
+    }
+    }
+</style>
+</head>
+<body>
+    <section id="showcase">
+        <h1>J_Captioneer_v2.release</h1>
+        <p>A PyQt5-based image & caption editor, browser, and caption generator</p>
+      </section>
+  <section id="content">
+    <h2>About J_Captioneer</h2>
+    <p>J_Captioneer_v1 is a PyQt5-based image editor and browser, as well as a caption generator and editor that allows users to view, navigate, and manage images and captions with ease. This streamlines your workflow and makes it easy to edit the captions to your training images. With J_Captioneer, you can quickly and efficiently browse through a directory of images. crop and resize them, create and edit the captions to each one. The app automatically loads all the images and their corresponding text files, and provides a simple and intuitive layout for editing captions. The app also has two find/replace functions as well as a prefix/suffix function.</p>
+  
+    <h2>What's New in v2?</h2>
+    <ol>
+      <li>BLIP & VIT-GPT2: Generate captions using the state-of-the-art models BLIP and VIT-GPT2.</li>
+      <li>Crop & Resize: Crop and resize images to your desired dimensions, similar to the functionality found on birme.net.</li>
+      <li>Settings: Launch the app in dark mode, remember the last directory opened, or choose a default directory.</li>
+      <li>Removed Find X and add after/before: This function can now be achieved with the find and replace function.</li>
+      <li>Optimized the program: Faster load times and no more frozen windows!</li>
+    </ol>
+  
+    <h2>Features</h2>
+    <p>J_Captioneer_v2 builds on the success of J_Captioneer_v1, with the following features:</p>
+    <ol>
+      <li>Load and display images in a directory.</li>
+      <li>Navigate through images with left and right arrow buttons or keys.</li>
+      <li>Add, edit, generate, and save captions as separate text files associated with each image.</li>
+      <li>Display images as thumbnails for easy navigation.</li>
+      <li>Add prefix and suffix to all captions in a directory.</li>
+      <li>Find and replace text in all captions in a directory.</li>
+      <li>Crop and resize images with a user-friendly interface.</li>
+      <li>Toggle dark mode for a more comfortable viewing experience.</li>
+      <li>Configure settings such as launching dark mode on startup and remembering the last directory.</li>
+    </ol>
+  </section>
+  <footer>
+    &copy; 2023 J_Captioneer. All rights reserved.
+  </footer>
+</body>
+</html>
