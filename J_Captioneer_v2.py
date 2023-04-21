@@ -2,7 +2,7 @@ import json
 import os
 import sys
 
-from PyQt5.QtCore import Qt, QRectF, QPointF, QSize, QSizeF, QThreadPool, QRunnable, pyqtSignal, QObject, QTimer, QRect
+from PyQt5.QtCore import Qt, QRectF, QSize, QSizeF, QThreadPool, QRunnable, pyqtSignal, QObject, QTimer, QRect
 from PyQt5.QtGui import QIcon, QPixmap, QPainter
 
 from PyQt5.QtWidgets import (
@@ -34,7 +34,7 @@ from PyQt5.QtWidgets import (
     QSpinBox,
     QGraphicsPixmapItem,
 )
-from PIL import Image, ImageOps
+from PIL import Image
 from transformers import VisionEncoderDecoderModel, ViTImageProcessor, AutoTokenizer, BlipProcessor, BlipForConditionalGeneration
 import torch
 model = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
@@ -230,7 +230,7 @@ class ImageBrowser(QMainWindow):
         self.text_filename = os.path.splitext(self.images[self.current_image])[0] + ".txt"
 
         if os.path.exists(self.text_filename):
-            with open(self.text_filename, "r") as file:
+            with open(self.text_filename, "r", encoding="utf-8") as file:
                 self.textbox.setPlainText(file.read())
         else:
             self.textbox.setPlainText("")
@@ -400,7 +400,7 @@ class ImageBrowser(QMainWindow):
 
     def save_text(self):
         if self.text_filename:
-            with open(self.text_filename, "w") as file:
+            with open(self.text_filename, "w", encoding="utf-8") as file:
                 file.write(self.textbox.toPlainText())
             
             self.show_status_message("Text saved successfully.")
@@ -439,9 +439,9 @@ class ImageBrowser(QMainWindow):
                 for file in files:
                     if file.lower().endswith('.txt'):
                         old_path = os.path.join(root, file)
-                        with open(old_path, "r") as f:
+                        with open(old_path, "r", encoding="utf-8") as f:
                             lines = [prefix + line.strip() + suffix for line in f]
-                        with open(old_path, "w") as f:
+                        with open(old_path, "r", encoding="utf-8") as f:
                             f.write("\n".join(lines))
 
     def find_replace_all(self):
@@ -453,10 +453,10 @@ class ImageBrowser(QMainWindow):
                 for file in files:
                     if file.lower().endswith('.txt'):
                         old_path = os.path.join(root, file)
-                        with open(old_path, "r") as f:
+                        with open(old_path, "r", encoding="utf-8") as f:
                             content = f.read()
                         content = content.replace(find_text, replace_text)
-                        with open(old_path, "w") as f:
+                        with open(old_path, "r", encoding="utf-8") as f:
                             f.write(content)
 
     def generate_captions(self):
@@ -921,7 +921,7 @@ class SettingsDialog(QDialog):
         self.setLayout(main_layout)
     def load_from_json(self, filename):
         try:
-            with open(filename, "r") as file:
+            with open(filename, "r", encoding="utf-8") as file:
                 settings = json.load(file)
             self.dark_mode_on_launch = settings.get("dark_mode_on_launch", False)
             self.default_directory = settings.get("default_directory", "")
@@ -937,7 +937,7 @@ class SettingsDialog(QDialog):
             "default_directory": self.default_directory,
             "remember_last_directory": self.remember_last_directory
         }
-        with open(filename, "w") as file:
+        with open(filename, "r", encoding="utf-8") as file:
             json.dump(settings, file, indent=2)
     def save_settings(self):
         self.dark_mode_on_launch = self.dark_mode_checkbox.isChecked()
